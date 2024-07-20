@@ -6,5 +6,5 @@ av_gr = [[sum(grades[0])/len(grades[0])],[sum(grades[1])/len(grades[1])],[sum(gr
 students = {'Johnny','Bilbo','Steve','Khendrik','Aaron'}
 list_students = list(students)
 s_list = sorted(list_students)
-class_register = {s_list[0]:av_gr[0],s_list[1]:av_gr[1],s_list[2]:av_gr[2],s_list[3]:av_gr[3],s_list[4]:av_gr[4]}
+class_register = dict(zip(s_list,av_gr))
 print(class_register)
